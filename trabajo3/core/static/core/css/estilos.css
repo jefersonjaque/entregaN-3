@@ -1,0 +1,13 @@
+.d-block{
+    width: 500px;
+    height: 500px;
+}
+.container{
+    margin-top: 50px;
+}
+.card{
+    margin-top: 70px;
+    margin-left: 400px;
+    border: solid black;
+    background-color:white;
+}
