@@ -9,3 +9,6 @@ def cajas(request):
     
 def electronica(request):
     return render(request,'core/electronica.html')
+
+def suspension(request):
+    return render(request,'core/suspension.html')
