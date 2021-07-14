@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"> 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,9 +57,9 @@
                       <button type="button" class="btn btn-danger">Trabajos Realizados</button>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="{% static 'core/img/cajas.jpg' %}">Cajas de cambios</li>
-                      <li><a class="dropdown-item" href="./Electronica.html">Electronica</li>
-                      <li><a class="dropdown-item" href="./Area de Suspencion y Direccion.html">Suspension y direccion</li>
+                      <li><a class="dropdown-item" href="/cajas">Cajas de cambios</li>
+                      <li><a class="dropdown-item" href="/Electronica">Electronica</li>
+                      <li><a class="dropdown-item" href="/suspension">Suspensi&oacute;n y direcci&oacute;n</li>
                     </ul>
                   </li>
                   <a class="nav-link active" aria-current="page" href="./Formulario.html"><button type="button" class="btn btn-danger">Marcas Incluidas</button></a>
@@ -94,7 +93,7 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <a href="/core/templates/core/cajas.html">
+                    <a href="/cajas">
                         <img src="{% static 'core/img/cajas.jpg' %}" class="d-block w-100" alt="...">
                     </a>
                     <div class="carousel-caption d-none d-md-block">
@@ -103,7 +102,7 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <a href="./Electronica.html">
+                    <a href="/Electronica">
                         <img src="{% static 'core/img/Electronica.jpg' %}" class="d-block w-100" alt="...">
                     </a>
                     <div class="carousel-caption d-none d-md-block">
@@ -112,7 +111,7 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <a href="./Area de Suspencion y Direccion.html">
+                    <a href="/suspension">
                         <img src="{% static 'core/img/suspension.jpg' %}" class="d-block w-100" alt="...">
                     </a>
                     <div class="carousel-caption d-none d-md-block">
@@ -135,6 +134,7 @@
     </div>
 </div>
 </section>
+<a href="/cajas"> ver </a>
 <footer>Informaci&oacute;n de la empresa 
   <br>
   Correo: contactotaller@tallermakween.com

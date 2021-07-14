@@ -15,8 +15,26 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from core.views import home, cajas, Electronica, suspension
+from core2.views import login, formM, guardarMarca, validarusuario, principal
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include("core.urls")),
+    path('',home),
+    path('home/',home),
+    path('cajas/',cajas),
+    path('Electronica/',Electronica),
+    path('suspension/',suspension),
+    path('login',login),
+    path('formM',formM),
+    path('guardarMarca/',guardarMarca),
+    path('validarusuario/', validarusuario),
+    path('pri/', principal),
+
+
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

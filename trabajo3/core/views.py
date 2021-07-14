@@ -6,9 +6,10 @@ def home(request):
 
 def cajas(request):
     return render(request,'core/cajas.html')
-    
-def electronica(request):
-    return render(request,'core/electronica.html')
+
+def Electronica(request):
+    return render(request,'core/Electronica.html')
 
 def suspension(request):
     return render(request,'core/suspension.html')
+
