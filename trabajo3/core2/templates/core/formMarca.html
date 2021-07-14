@@ -12,7 +12,7 @@
 <body>
     <div class="container">
             <h1 class="titulo">Ingreso de datos de la Marca</h1>
-            <form method="POST" action="guardarCategoria">
+            <form method="POST" action="guardarMarca/">
                     {% csrf_token %}
 
                 <div class="form-group">
@@ -28,7 +28,7 @@
                 <div class="form-group">
                     <input type="submit" value="Guardar" class="btn-primary">
                     <input type="reset" value="Limpiar" class="btn-primary">
-                    <label class="ingresar"><a href="/formN">Agregar un nuevo modelo</a></label>
+                    <label class="ingresar"><a href="/formMO">Agregar un nuevo modelo</a></label>
                 </div>
 
             </form>

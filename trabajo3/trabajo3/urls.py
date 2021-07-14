@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from core.views import home, cajas, Electronica, suspension
-from core2.views import login, formM, guardarMarca, validarusuario, principal
+from core2.views import login, formM, guardarMarca, validarusuario, principal, formMO, guardarModelo, verAutos, eliminarModelo, modificarModelo, guardarModificarModelo
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -32,7 +32,12 @@ urlpatterns = [
     path('guardarMarca/',guardarMarca),
     path('validarusuario/', validarusuario),
     path('pri/', principal),
-
+    path('formMO', formMO),
+    path('guardarModelo/', guardarModelo),
+    path('verAutos/', verAutos),
+    path('eliminarM/<int:xxx>', eliminarModelo),
+    path('modificarM/<int:xxx>/', modificarModelo),
+    path('guardarModificarModelo', guardarModificarModelo),
 
 ]
 

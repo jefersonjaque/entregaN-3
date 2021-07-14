@@ -11,6 +11,7 @@ class Modelo(models.Model):
     idModelo=models.IntegerField(primary_key=True)
     nombreModelo = models.CharField(max_length=50, verbose_name='Modelo')
     patente = models.CharField(max_length=6, verbose_name='Patente')
+    imagen=models.CharField(max_length=100, default='')
     marca = models.ForeignKey(Marca, on_delete=models.CASCADE)
 
 
